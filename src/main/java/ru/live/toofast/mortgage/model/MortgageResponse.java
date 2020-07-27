@@ -7,6 +7,7 @@ public class MortgageResponse implements Serializable {
     private MortgageRequest request;
     private Long id;
     private String resolution;
+   // private String passport;
 
 
     public MortgageRequest getRequest() {
@@ -32,6 +33,7 @@ public class MortgageResponse implements Serializable {
     public void setResolution(String resolution) {
         this.resolution = resolution;
     }
+
 
     @Override
     public String toString() {

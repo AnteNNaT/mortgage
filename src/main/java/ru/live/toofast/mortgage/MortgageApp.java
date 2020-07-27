@@ -3,6 +3,7 @@ package ru.live.toofast.mortgage;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class MortgageApp {
 

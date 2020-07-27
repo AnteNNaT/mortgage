@@ -11,9 +11,10 @@ public class MortgageApplication {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
+    private String passportId;
     private String name;
-
+    private ApplicationStatus status;
+    private ApplicationDeclineReason declineReason;
 
     public Long getId() {
         return id;
@@ -29,5 +30,29 @@ public class MortgageApplication {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getPassportId() {
+        return passportId;
+    }
+
+    public void setPassportId(String passportId) {
+        this.passportId = passportId;
+    }
+
+    public ApplicationStatus getStatus() {
+        return status;
+    }
+
+    public void setStatus(ApplicationStatus status) {
+        this.status = status;
+    }
+
+    public ApplicationDeclineReason getDeclineReason() {
+        return declineReason;
+    }
+
+    public void setDeclineReason(ApplicationDeclineReason declineReason) {
+        this.declineReason = declineReason;
     }
 }
